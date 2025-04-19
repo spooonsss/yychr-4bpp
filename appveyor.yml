@@ -7,7 +7,7 @@ build_script:
   - cd yychr20210606\yychr
   - call "c:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
   - ildasm /all /out:CharactorLib.il CharactorLib.dll
-  - git apply ../../CharactorLib-4bpp.diff
+  - patch -p1 < ..\..\CharactorLib-4bpp.diff
   - ilasm CharactorLib.il /dll /resource:CharactorLib.res
   - sha1sum CharactorLib.dll
 
