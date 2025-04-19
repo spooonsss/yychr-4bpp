@@ -1,58 +1,58 @@
-diff --git a/yychr20210606/yychr/CharactorLib.il b/yychr20210606/yychr/CharactorLib.il
-index fb6ae6f..03db320 100644
+diff --git a/CharactorLib.il b/CharactorLib.il
+index 8b6b9ba..87f36a1 100644
 --- a/CharactorLib.il
 +++ b/CharactorLib.il
-@@ -10617,7 +10617,7 @@
+@@ -4276,7 +4276,7 @@
      IL_0012:  /* 72   | (70)000121       */ ldstr      "2BPP MSX Screen2" /* 70000121 */
-     IL_0017:  /* 28   | (06)00003E       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Name(string) /* 0600003E */
+     IL_0017:  /* 28   | (06)000055       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Name(string) /* 06000055 */
      IL_001c:  /* 02   |                  */ ldarg.0
 -    IL_001d:  /* 72   | (70)000143       */ ldstr      "bin,rom" /* 70000143 */
 +    IL_001d:  /* 72   | (70)000143       */ ldstr      "fin,rom" /* 70000143 */
-     IL_0022:  /* 28   | (06)000040       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Extension(string) /* 06000040 */
+     IL_0022:  /* 28   | (06)000057       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Extension(string) /* 06000057 */
      IL_0027:  /* 02   |                  */ ldarg.0
      IL_0028:  /* 72   | (70)00004D       */ ldstr      "Yy" /* 7000004D */
-@@ -11138,7 +11138,7 @@
+@@ -4797,7 +4797,7 @@
      IL_0012:  /* 72   | (70)000169       */ ldstr      "8BPP SNES Mode7" /* 70000169 */
-     IL_0017:  /* 28   | (06)00003E       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Name(string) /* 0600003E */
+     IL_0017:  /* 28   | (06)000055       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Name(string) /* 06000055 */
      IL_001c:  /* 02   |                  */ ldarg.0
 -    IL_001d:  /* 72   | (70)000189       */ ldstr      "smc,sfc,fig" /* 70000189 */
 +    IL_001d:  /* 72   | (70)000189       */ ldstr      "smc,sfc,bin" /* 70000189 */
-     IL_0022:  /* 28   | (06)000040       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Extension(string) /* 06000040 */
+     IL_0022:  /* 28   | (06)000057       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Extension(string) /* 06000057 */
      IL_0027:  /* 02   |                  */ ldarg.0
      IL_0028:  /* 72   | (70)00001F       */ ldstr      "" /* 7000001F */
-@@ -11359,7 +11359,7 @@
+@@ -5018,7 +5018,7 @@
      IL_0012:  /* 72   | (70)0001A1       */ ldstr      "4BPP SNES/PCE(CG)" /* 700001A1 */
-     IL_0017:  /* 28   | (06)00003E       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Name(string) /* 0600003E */
+     IL_0017:  /* 28   | (06)000055       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Name(string) /* 06000055 */
      IL_001c:  /* 02   |                  */ ldarg.0
 -    IL_001d:  /* 72   | (70)0001C5       */ ldstr      "smc,sfc,fig,pce" /* 700001C5 */
 +    IL_001d:  /* 72   | (70)0001C5       */ ldstr      "smc,sfc,bin,pce,chr" /* 700001C5 */
-     IL_0022:  /* 28   | (06)000040       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Extension(string) /* 06000040 */
+     IL_0022:  /* 28   | (06)000057       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Extension(string) /* 06000057 */
      IL_0027:  /* 02   |                  */ ldarg.0
      IL_0028:  /* 72   | (70)00001F       */ ldstr      "" /* 7000001F */
-@@ -12469,7 +12469,7 @@
+@@ -7893,7 +7893,7 @@
      IL_0012:  /* 72   | (70)0003EF       */ ldstr      "2BPP NES" /* 700003EF */
-     IL_0017:  /* 28   | (06)00003E       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Name(string) /* 0600003E */
+     IL_0017:  /* 28   | (06)000055       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Name(string) /* 06000055 */
      IL_001c:  /* 02   |                  */ ldarg.0
 -    IL_001d:  /* 72   | (70)000401       */ ldstr      "nes,fds,chr,bkg,spr" /* 70000401 */
 +    IL_001d:  /* 72   | (70)000401       */ ldstr      "nes,fds,bkg,spr" /* 70000401 */
-     IL_0022:  /* 28   | (06)000040       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Extension(string) /* 06000040 */
+     IL_0022:  /* 28   | (06)000057       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Extension(string) /* 06000057 */
      IL_0027:  /* 02   |                  */ ldarg.0
      IL_0028:  /* 72   | (70)00004D       */ ldstr      "Yy" /* 7000004D */
-@@ -14990,7 +14990,7 @@
+@@ -9967,7 +9967,7 @@
      IL_0012:  /* 72   | (70)0004C7       */ ldstr      "2BPP MSX" /* 700004C7 */
-     IL_0017:  /* 28   | (06)00003E       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Name(string) /* 0600003E */
+     IL_0017:  /* 28   | (06)000055       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Name(string) /* 06000055 */
      IL_001c:  /* 02   |                  */ ldarg.0
 -    IL_001d:  /* 72   | (70)000143       */ ldstr      "bin,rom" /* 70000143 */
 +    IL_001d:  /* 72   | (70)000143       */ ldstr      "fin,rom" /* 70000143 */
-     IL_0022:  /* 28   | (06)000040       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Extension(string) /* 06000040 */
+     IL_0022:  /* 28   | (06)000057       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Extension(string) /* 06000057 */
      IL_0027:  /* 02   |                  */ ldarg.0
      IL_0028:  /* 72   | (70)00004D       */ ldstr      "Yy" /* 7000004D */
-@@ -17843,7 +17843,7 @@
+@@ -13574,7 +13574,7 @@
      IL_0012:  /* 72   | (70)00063B       */ ldstr      "4BPP MSX" /* 7000063B */
-     IL_0017:  /* 28   | (06)00003E       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Name(string) /* 0600003E */
+     IL_0017:  /* 28   | (06)000055       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Name(string) /* 06000055 */
      IL_001c:  /* 02   |                  */ ldarg.0
 -    IL_001d:  /* 72   | (70)00064D       */ ldstr      "bin,rom,smd" /* 7000064D */
 +    IL_001d:  /* 72   | (70)00064D       */ ldstr      "fin,rom,smd" /* 7000064D */
-     IL_0022:  /* 28   | (06)000040       */ call       instance void CharactorLib.Format.FormatBase/*02000005*/::set_Extension(string) /* 06000040 */
+     IL_0022:  /* 28   | (06)000057       */ call       instance void CharactorLib.Format.FormatBase/*0200000E*/::set_Extension(string) /* 06000057 */
      IL_0027:  /* 02   |                  */ ldarg.0
      IL_0028:  /* 72   | (70)00004D       */ ldstr      "Yy" /* 7000004D */
