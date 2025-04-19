@@ -1,0 +1,15 @@
+image: Visual Studio 2022
+
+build_script:
+  - curl -O -sSL https://dl.smwcentral.net/27208/yychr20210606.zip
+  - sha1sum yychr20210606.zip
+  - 7z x yychr20210606.zip
+  - cd yychr20210606
+  - call "c:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
+  - ildasm /all /out:CharactorLib.il CharactorLib.dll
+  - git apply ../CharactorLib-4bpp.diff
+  - ilasm CharactorLib.il /dll /resource:CharactorLib.res
+  - sha1sum CharactorLib.dll
+
+artifacts:
+  - path: '*/CharactorLib.dll'
